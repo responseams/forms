@@ -24,11 +24,20 @@
             "helpers/forms.php"
         ]
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
     "extra": {
         "laravel": {
             "providers": [
                 "Response\\Forms\\Providers\\FormsServiceProvider"
             ]
         }
+    },
+    "require-dev": {
+        "pestphp/pest": "^0.1.5",
+        "orchestra/testbench": "^5.2"
     }
 }
