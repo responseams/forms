@@ -1,0 +1,34 @@
+{
+    "name": "responseams/forms",
+    "description": "Forms from classes, powered by Livewire.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Scott Plunkett",
+            "email": "plunkets@aeoss.io",
+            "role": "Lead Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "livewire/livewire": "^1.1",
+        "responseams/components": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Response\\Forms\\": "src/"
+        },
+        "files": [
+            "helpers/forms.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Response\\Forms\\Providers\\FormsServiceProvider"
+            ]
+        }
+    }
+}
